@@ -1,0 +1,22 @@
+Auto Minesweeper
+-checks chance
+-top to bottom, left to right
+-only activates when there is a 100% chance
+-loops through opened cells
+
+Tracks
+int[][] foundBombPosistion <- 100% chance
+
+Check
+hits random open cell
+if (cell[x][y] == 0) {
+	all cells around will be opened
+} else (cell[x][y] != 0) {
+	if (cells around are == foundBombPosistion list && cells around that contain bombs == exposed number) {
+		all cells around will be opened
+	} else {
+		skip and check later
+	}
+}
+
+
